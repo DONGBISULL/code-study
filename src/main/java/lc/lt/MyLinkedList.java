@@ -20,7 +20,7 @@ public class MyLinkedList {
     }
 
     public int get(int index) {
-        if (index <= 0 || index >= size) {
+        if (index < 0 || index >= size) {
             return -1;
         }
         Node cur = head;
